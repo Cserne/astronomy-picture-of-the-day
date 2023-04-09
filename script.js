@@ -42,11 +42,12 @@ let apiKey = 'pH78dG7t86A3kH2OntHiSjry3LqfcTQjmMtqe2el';
 const displayTodaysData = async() => {
     let currentDaysUrl = await fetch(baseUrl + apiKey + '&date=' + currentDay);
     let data = await currentDaysUrl.json();
+    console.log(data);
     picTitle.innerHTML = data.title;
     if (data.media_type === 'image') {
         media.innerHTML = image;
-        document.getElementById('hdPic').href = data.hdurl;
-        document.getElementById('pictureByDate').src = data.url;
+        document.querySelector('.hdPic').href = data.hdurl;
+        document.querySelector('.pictureByDate').src = data.url;
     };
     if (data.media_type === 'video') {
         media.innerHTML = video;
