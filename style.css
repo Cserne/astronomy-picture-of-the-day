@@ -1,0 +1,94 @@
+* {
+margin:0;
+padding:0;
+border:0;
+background:transparent;
+outline:none;
+text-decoration:none;
+outline:none;
+font-family: 'Exo', sans-serif;
+color: rgb(46, 22, 22);
+box-sizing:border-box;
+}
+
+ol, ul, li {
+list-style:none;
+display:block;
+}
+
+table {
+border-collapse: collapse;
+border-spacing:0;
+}
+
+a, img {
+border: none;
+}
+
+button, a {
+cursor: pointer;
+color: inherit;
+}
+
+textarea {
+resize: none;
+}
+
+button, input, textarea, select {
+appearance: none !important;
+-webkit-appearance: none !important;
+border-radius: 0;
+} 
+
+#root {
+    background-color: rgb(247, 241, 229);
+}
+
+h1 {
+    padding: 25px 0;
+}
+
+label, h1, .datePickerDiv, .picTitle, .picDate {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.datePickerDiv {
+    padding: 12px 0 5px;
+}
+
+.picTitle {
+    padding: 10px 0;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.pictureDiv {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.pictureByDate {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.videoDiv {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.videoByDate {
+    width: 100%;
+    height: 80vh;
+}
+
+.picDate {
+    padding: 10px 0;
+}
+
+.explanation {
+    margin: 15px auto;
+    width: 80%;
+    text-align: justify;
+}
